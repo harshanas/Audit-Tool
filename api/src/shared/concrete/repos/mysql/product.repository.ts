@@ -9,7 +9,7 @@ import { User as UserEntity } from './entity/user';
 import { mapDbItems, productMapper, productScoreMapper } from './dbMapper';
 import { getRepository } from 'typeorm';
 import { Question as QuestionEntity } from './entity/question';
-import  { QuestionDraft } from './entity/question_draft';
+import { QuestionDraft } from './entity/question_draft';
 import { Evidence as EvidenceEntity } from './entity/evidence';
 import { Organization as OrganizationEntity } from './entity/organization';
 

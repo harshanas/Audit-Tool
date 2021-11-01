@@ -1,5 +1,5 @@
 import { Entity, PrimaryGeneratedColumn, Column, OneToMany } from 'typeorm';
-import { Evidence } from './evidence'
+import { Evidence } from './evidence';
 
 const ENTITY_NAME = 'Question_Draft';
 
