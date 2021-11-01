@@ -34,9 +34,9 @@ export class MySQLQuestionDraftRepository implements IQuestionDraftRepository {
         });
         latestItems.push(sameOrderId[sameOrderId.length - 1]);
       }
-      latestItems = latestItems.sort(function(firstEl, secondEl){
+      latestItems = latestItems.sort(function(firstEl, secondEl) {
         return firstEl.orderId - secondEl.orderId;
-      })
+      });
       return latestItems;
     } catch (err) {
       throw err;
