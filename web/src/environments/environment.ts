@@ -8,7 +8,7 @@ export const environment = {
   + 'login?response_type=code&client_id=6r1eenlevnui1fe4epbp5vjfrn&redirect_uri=http://localhost:4200/auth',
   redirectSignIn: 'http://localhost:4200/auth',
   redirectSignOut: 'http://localhost:4200/auth',
-  host: window.location.origin + '/dev',
+  host: 'http://localhost:3000' //window.location.origin + '/dev',
 };
 
 /*

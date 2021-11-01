@@ -1,4 +1,5 @@
-import { Entity, PrimaryGeneratedColumn, Column } from 'typeorm';
+import { Entity, PrimaryGeneratedColumn, Column, OneToMany } from 'typeorm';
+import { Evidence } from './evidence'
 
 const ENTITY_NAME = 'Question_Draft';
 
@@ -30,4 +31,10 @@ export class QuestionDraft {
 
   @Column()
   patchVersion!: number;
+
+  @OneToMany(
+    type => Evidence,
+    evidence => evidence.question,
+  )
+  evidences!: Evidence[];
 }

@@ -1,5 +1,6 @@
 import { Entity, PrimaryGeneratedColumn, Column, ManyToOne } from 'typeorm';
 import { Question } from './question';
+import { QuestionDraft } from './question_draft';
 import { User } from './user';
 import { Product } from './product';
 
@@ -29,10 +30,10 @@ export class Evidence {
   user!: User;
 
   @ManyToOne(
-    type => Question,
+    type => QuestionDraft,
     question => question.evidences,
   )
-  question!: Question;
+  question!: QuestionDraft;
 
   @ManyToOne(
     type => Product,
